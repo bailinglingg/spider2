@@ -58,6 +58,7 @@ public class Spider implements Runnable{
 				String num =e.select(".star span").last().text();
 				f.num=Integer.parseInt(num.substring(0,num.length()-3));
 				f.quote=e.select(".inq").first().text();
+				f.url=e.select(".pic a").first().attr("href");
 
 				System.out.println(name+":"+f);
 				list.add(f);

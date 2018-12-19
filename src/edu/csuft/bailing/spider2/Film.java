@@ -40,6 +40,10 @@ public class Film implements Comparable<Film>{
 	 * ¶ÌÆÀ
 	 */
 	String quote;
+	/**
+	 * Ó°Æ¬ÏêÏ¸Â·¾¶
+	 */
+	String url;
 	
 	public String toCSV(){
 		return String.format("%d,%s,%d,%.1f\n",
